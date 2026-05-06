@@ -1,0 +1,16 @@
+{
+    "name": "ghdotnet",
+    "version": "1.0.0",
+    "description": "A .NET web application",
+    "main": "index.js",
+    "scripts": {
+      "install-libs": "npm install",
+      "copy-bootstrap": "copyfiles -u 1 node_modules/bootstrap/dist/** wwwroot/lib/bootstrap/"
+    },
+    "dependencies": {
+      "bootstrap": "^5"
+    },
+    "devDependencies": {
+      "copyfiles": "^2.4.1"
+    }
+  }
