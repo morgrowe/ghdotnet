@@ -25,8 +25,8 @@ jobs:
     - name: Install npm dependencies
       run: npm install
 
-    - name: Copy Bootstrap to wwwroot
-      run: npx copyfiles -u 1 node_modules/bootstrap/dist/** wwwroot/lib/bootstrap/
+    - name: Copy Bootstrap to project wwwroot
+      run: npx copyfiles -u 1 node_modules/bootstrap/dist/** ghdotnet/wwwroot/lib/bootstrap/
 
     - name: Restore dependencies
       run: dotnet restore
